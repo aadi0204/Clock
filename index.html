@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of free online clock tools. World clock, stopwatch, countdown timer, and more.">
+    <meta name="keywords" content="clock tools, world clock, stopwatch, countdown timer, online tools, free tools">
+    <meta name="author" content="Your Name">
+    <title>Clock Tools - Online Clock Utilities</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tools Section */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tool-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            text-align: center;
+            padding: 30px 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .tool-card .icon {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover .icon {
+            transform: scale(1.1);
+        }
+
+        .tool-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .tool-card p {
+            margin: 15px 0 0;
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .tool-card {
+                padding: 20px 15px;
+            }
+
+            .tool-card .icon {
+                font-size: 3rem;
+            }
+
+            .tool-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .tool-card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ADSENSE_AD_UNIT_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Clock Tools</h1>
+        <p>Your one-stop destination for free online clock utilities.</p>
+    </header>
+
+    <main>
+        <section class="tools-grid">
+            <!-- World Clock -->
+            <a href="/Clock/clock.html" class="tool-card">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h3>World Clock</h3>
+                <p>View the current time in different time zones around the world.</p>
+            </a>
+
+            <!-- Stopwatch -->
+            <a href="stopwatch.html" class="tool-card">
+                <div class="icon"><i class="fas fa-stopwatch"></i></div>
+                <h3>Stopwatch</h3>
+                <p>Track time with a precise and easy-to-use stopwatch.</p>
+            </a>
+
+            <!-- Countdown Timer -->
+            <a href="countdown-timer.html" class="tool-card">
+                <div class="icon"><i class="fas fa-hourglass-start"></i></div>
+                <h3>Countdown Timer</h3>
+                <p>Set a countdown timer for events, deadlines, or reminders.</p>
+            </a>
+
+            <!-- Alarm Clock -->
+            <a href="alarm-clock.html" class="tool-card">
+                <div class="icon"><i class="fas fa-bell"></i></div>
+                <h3>Alarm Clock</h3>
+                <p>Set alarms and reminders with a simple and intuitive interface.</p>
+            </a>
+
+            <!-- Time Zone Converter -->
+            <a href="time-zone-converter.html" class="tool-card">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <h3>Time Zone Converter</h3>
+                <p>Convert time between different time zones effortlessly.</p>
+            </a>
+
+            <!-- Pomodoro Timer -->
+            <a href="pomodoro-timer.html" class="tool-card">
+                <div class="icon"><i class="fas fa-tasks"></i></div>
+                <h3>Pomodoro Timer</h3>
+                <p>Boost productivity with a Pomodoro timer for focused work sessions.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Clock Tools. All rights reserved.</p>
+    </footer>
+</body>
+</html>
