@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully responsive, full-screen clock with dynamic functionality. Perfect for time tracking and display.">
+    <meta name="keywords" content="responsive clock, full-screen clock, dynamic clock, online clock, time display">
+    <meta name="author" content="Your Name">
+    <title>Full-Screen Responsive Clock</title>
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ADSENSE_AD_UNIT_ID" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Clock Container */
+        .clock-container {
+            text-align: center;
+        }
+
+        .clock {
+            font-size: 10vw; /* Responsive font size */
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .date {
+            font-size: 3vw; /* Responsive font size */
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        /* Ad Section */
+        .ad-section {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 728px;
+            text-align: center;
+        }
+
+        .ad-section ins {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .clock {
+                font-size: 15vw; /* Larger font size for smaller screens */
+            }
+
+            .date {
+                font-size: 5vw; /* Larger font size for smaller screens */
+            }
+
+            .ad-section {
+                bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Clock Container -->
+    <div class="clock-container">
+        <div class="clock" id="clock">00:00:00</div>
+        <div class="date" id="date">Loading date...</div>
+    </div>
+
+    <!-- Ad Section -->
+    <div class="ad-section">
+        <!-- Google AdSense Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="YOUR_ADSENSE_AD_UNIT_ID"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <script>
+        // Function to update the clock
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const clock = document.getElementById('clock');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+
+            // Update the date
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const date = document.getElementById('date');
+            date.textContent = now.toLocaleDateString('en-US', options);
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately
+        updateClock();
+    </script>
+</body>
+</html>
